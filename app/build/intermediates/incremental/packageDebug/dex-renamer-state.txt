@@ -1,0 +1,4 @@
+#Thu Jan 26 21:59:34 CST 2017
+base.0=C\:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

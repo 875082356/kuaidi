@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hzgzsoft.logisticsmanage.EmbraceActivity"
+    android:background="#ffffff"
+    android:weightSum="1142"
+    android:orientation="vertical">
+
+
+    <!--箱子绑定-->
+    <LinearLayout
+        
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="66"
+        android:weightSum="720"
+        
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/bind_box_text_colors"
+            android:background="@drawable/bind_box_sky_colors"
+            android:textSize="15sp"
+            android:text="绑定包装箱"
+            android:layout_weight="179"
+            android:id="@+id/bindBox"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#000000"
+           
+            android:id="@+id/RFID"
+            android:layout_weight="541"/>
+    </LinearLayout>
+
+<!--－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+    <!--发件人模块-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="284"
+        android:weightSum="720">
+
+        <!--左边图片-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="55"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/send"
+                android:scaleType="fitXY"
+                android:layout_weight="75"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="183">
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/greelinebtm"
+                android:scaleType="fitXY"
+                android:layout_weight="26"/>
+        </LinearLayout>
+
+        <!--中间图片与发件人内容-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="582"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/greelinelong"
+                android:scaleType="fitXY"
+                android:layout_weight="28"/>
+
+            <!--发件人内容-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="230"
+                android:weightSum="230">
+
+                <!--第一行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:weightSum="582">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="联系电话"
+                        android:layout_weight="167"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/sendPhone"
+                        android:textSize="15sp"
+                        android:paddingBottom="8dp"
+                        
+                        android:layout_span="2"
+                        android:layout_weight="309"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_weight="106"/>
+
+                </TableRow>
+
+                <!--第二行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:weightSum="582">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="寄件人:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/sendName"
+                        
+                        android:layout_column="0"
+                        android:layout_weight="142"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="邮政编码:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/sendPost"
+                        
+                        android:layout_column="0"
+                        android:layout_weight="106"/>
+
+                </TableRow>
+
+                <!--第三行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="108"
+                    android:weightSum="582">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="邮寄地址:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/sendAddress"
+                        android:layout_column="0"
+                       
+                        android:layout_weight="415"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/greelinelongbtm"
+                android:scaleType="fitXY"
+                android:layout_weight="26"/>
+
+        </LinearLayout>
+
+        <!--右边图片与重置按钮-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="83"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/greelineshort"
+                android:scaleType="fitXY"
+                android:layout_weight="28"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="181">
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/greebtn"
+                android:scaleType="fitXY"
+                android:id="@+id/sendReset"
+                android:layout_weight="75"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--灰色横线-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="9"
+        android:background="#e6e6e6">
+    </LinearLayout>
+
+<!--－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+    <!--收件人模块-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="284"
+        android:weightSum="720">
+
+        <!--左边图片-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="55"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/receive"
+                android:scaleType="fitXY"
+                android:layout_weight="75"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="183">
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/bluelinebtm"
+                android:scaleType="fitXY"
+                android:layout_weight="26"/>
+        </LinearLayout>
+
+        <!--中间图片与发件人内容-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="582"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/bluelinelong"
+                android:scaleType="fitXY"
+                android:layout_weight="28"/>
+
+            <!--收件人内容-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="230"
+                android:weightSum="230">
+
+                <!--第一行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:weightSum="582">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="联系电话"
+                        android:layout_weight="167"/>
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:ems="10"
+                        android:id="@+id/receivePhone"
+                        android:textSize="15sp"
+                        android:paddingBottom="8dp"
+                        
+                        android:layout_span="2"
+                        android:layout_weight="309"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_weight="106"/>
+
+                </TableRow>
+
+                <!--第二行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="61"
+                    android:weightSum="582">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="收件人:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/receiveName"
+                        
+                        android:layout_column="0"
+                        android:layout_weight="142"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="邮政编码:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/receivePost"
+                        
+                        android:layout_column="0"
+                        android:layout_weight="106"/>
+
+                </TableRow>
+
+                <!--第三行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="108"
+                    android:weightSum="582">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="邮寄地址:"
+                        android:layout_column="0"
+                        android:layout_weight="167"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:id="@+id/receiveAddress"
+                       
+                        android:layout_weight="415"/>
+
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/bluelinelongbtm"
+                android:scaleType="fitXY"
+                android:layout_weight="26"/>
+
+        </LinearLayout>
+
+        <!--右边图片与重置按钮-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="83"
+            android:weightSum="284">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/bluelineshort"
+                android:scaleType="fitXY"
+                android:layout_weight="28"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="181">
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@drawable/bluebtn"
+                android:scaleType="fitXY"
+                android:id="@+id/receiveReset"
+                android:layout_weight="75"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--灰色横线-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="9"
+        android:background="#e6e6e6">
+    </LinearLayout>
+
+<!--－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+    <!--货物信息-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="386"
+        android:background="#fbfbfb"
+        android:weightSum="720">
+
+        <!--左边图片-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="55"
+            android:weightSum="386">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/goods"
+                android:scaleType="fitXY"
+                android:layout_weight="74"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="312">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--右边内容-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="665"
+            android:weightSum="386">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/brownline"
+                android:scaleType="fitXY"
+                android:layout_weight="27"/>
+
+            <!--货物具体信息-->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="358"
+                android:weightSum="358">
+
+                <!--第一行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="物品类型"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/leixing"
+                            android:layout_weight="150"
+                            android:inputType="text"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:text="保费"
+                        android:layout_column="0"
+                        android:layout_weight="100"/>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="230"
+                        android:weightSum="230">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/baofei"
+                            android:layout_weight="170"
+                            android:inputType="numberDecimal"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <!--第二行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="物品名称"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/mingcheng"
+                            android:layout_weight="150"
+                            android:inputType="text"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:text="是否协议结算"
+                        android:layout_column="0"
+                        android:layout_weight="330"/>
+
+                </TableRow>
+
+                <!--第三行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="物品数量"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:inputType="numberDecimal"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/shuliang"
+                            android:layout_weight="150"/>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/radiogroup"
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="330">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="40dp"
+                            android:text="是"
+                            android:id="@+id/xieyishi"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"
+                            android:text="否"
+                            android:id="@+id/xieyifou"/>
+                    </RadioGroup>
+
+
+                </TableRow>
+
+                <!--第四行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="物品重量"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/zhongliang"
+                            android:layout_weight="150"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:text="是否邮件到付"
+                        android:layout_column="0"
+                        android:layout_weight="330"/>
+
+                </TableRow>
+
+                <!--第五行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="物品体积"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/tiji"
+                            android:layout_weight="150"
+                            android:inputType="text"/>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="330">
+
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingRight="40dp"
+                            android:text="是"
+                            android:id="@+id/daofushi"/>
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:checked="true"
+                            android:text="否"
+                            android:id="@+id/daofufou"/>
+                    </RadioGroup>
+
+
+                </TableRow>
+
+                <!--第六行-->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="58"
+                    android:weightSum="665">
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:text="快递费用"
+                        android:layout_column="0"
+                        android:layout_weight="155"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="180"
+                        android:weightSum="180">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/feiyong"
+                            android:layout_weight="150"
+                            android:inputType="numberDecimal"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="15sp"
+                        android:paddingLeft="5dp"
+                        android:text="签收人"
+                        android:layout_column="0"
+                        android:layout_weight="100"/>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="230"
+                        android:weightSum="230">
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:inputType="textPersonName"
+                            android:textSize="15sp"
+                            android:ems="10"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="0dp"
+                            android:id="@+id/qianshoren"
+                            android:layout_weight="170"/>
+                    </LinearLayout>
+
+                </TableRow>
+
+
+
+            </TableLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+<!--－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－-->
+
+    <!--确定按钮-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="104"
+        android:background="#e6e6e6"
+        android:weightSum="720">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="670"
+            android:weightSum="104">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="70"
+                android:textColor="@drawable/queding_box_text_colors"
+                android:background="@drawable/queding_box_sky_colors"
+                android:id="@+id/queding"
+                android:text="确  定"
+                android:textSize="23sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+   <!--  导航条
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="90"
+        android:background="#282828"
+        android:weightSum="720">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="130">
+        </TableLayout>
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="53"
+            android:weightSum="90">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/back"
+                android:scaleType="fitXY"
+                android:layout_weight="45"/>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="352">
+        </TableLayout>
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="53"
+            android:weightSum="90">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/more"
+                android:scaleType="fitXY"
+                android:layout_weight="45"/>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="132">
+        </TableLayout>
+    </LinearLayout> -->
+
+
+</LinearLayout>

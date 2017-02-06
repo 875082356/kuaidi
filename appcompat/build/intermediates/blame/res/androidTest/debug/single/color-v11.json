@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\appcompat\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\appcompat\\build\\intermediates\\bundles\\debug\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\appcompat\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\appcompat\\build\\intermediates\\bundles\\debug\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

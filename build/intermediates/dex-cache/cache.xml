@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\libs\org.apache.http.legacy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="017030d11901291abf8f83a812984276b643ea0f">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\org.apache.http.legacy_b489a98902547512cc7e60dea38aea9592539669.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\swipelistview\unspecified\jars\libs\android-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="aaa9bc27cf2226482875d769ac45286970935b21">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\android-support-v4_f3e8bf16bcc65b50e61fd2b21bad0a5c2e4c9716.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\appcompat\unspecified\jars\libs\android-support-v7-appcompat.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="5f13da7ca2d64326fb4e3e3f36e8e56287de6a23">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\android-support-v7-appcompat_622a3c949e4f6cc23e7b14b3a2200264713393bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\swipelistview\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e174936b0e6494e1e525884a528f2b3ee2a8c3af">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\kuaidi-swipelistview-unspecified_ca0019aa296b77c26665b7fd7f66d17d330d9362.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\swipelistview\unspecified\jars\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f086e018e187da53a1432c188023c86d1fa3ff73">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_e6721dc521887095e9975e301007fe5e3912c818.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\MagicUHF_tid_U\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="99400b0d144f656eb407e9364293c9ae0055e01b">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\kuaidi-MagicUHF_tid_U-unspecified_873ac7dbbd07211794cf94651e96b46b3ee6513a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\gson-2.3.1_7566ff513bf081e557304941473db10274ec9be8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\a\Desktop\kuaidi\app\build\intermediates\exploded-aar\kuaidi\appcompat\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.0"
+        sha1="a90524b4b573a90b2ccfde672cf94fa5b3cb3f56">
+        <dex dex="C:\Users\a\Desktop\kuaidi\app\build\intermediates\pre-dexed\debug\kuaidi-appcompat-unspecified_84a80dcdae9c83e9a39852cd01531c7d567aee90.jar" />
+    </item>
+
+</items>

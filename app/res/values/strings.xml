@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LogisticsManage</string>
+
+
+    <drawable name="bindbox_sky_clr_normal">#556FB5</drawable>
+    <drawable name="bindbox_sky_clr_pressed">#3A4B83</drawable>
+    <drawable name="bindbox_text_clr_normal">#ffffff</drawable>
+    <drawable name="bindbox_text_clr_pressed">#E4E4E4</drawable>
+
+    <drawable name="queding_sky_clr_normal">#AA4200</drawable>
+    <drawable name="queding_sky_clr_pressed">#803101</drawable>
+    <drawable name="queding_text_clr_normal">#ffffff</drawable>
+    <drawable name="queding_text_clr_pressed">#E4E4E4</drawable>
+</resources>

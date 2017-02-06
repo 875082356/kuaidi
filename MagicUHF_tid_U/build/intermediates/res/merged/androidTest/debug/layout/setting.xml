@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发射功率:" />
+
+        <EditText
+            android:id="@+id/power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text=""
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/BtnReadPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="读取发射功率"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BtnSetPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置发射功率"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewParameter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收调节器参数:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewMixer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="混频器:" />
+
+        <EditText
+            android:id="@+id/Mixer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text=""
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewAMP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中频放大器:" />
+
+        <EditText
+            android:id="@+id/AFAMP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text=""
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+         <TextView
+            android:id="@+id/textViewThrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信号解调阀值:" />
+
+        <EditText
+            android:id="@+id/Thrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint=""
+            android:text=""
+            android:textSize="18dp" />       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BtnGetPam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="读取"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/BtnSetPam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="CONSOLE"
+            android:textSize="18dp" />
+    </ScrollView>
+
+</LinearLayout>

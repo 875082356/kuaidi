@@ -1,0 +1,125 @@
+[
+    {
+        "outputFile": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 134,
+                    "endOffset": 185
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 134,
+                        "endOffset": 185
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 190,
+                    "endColumn": 74,
+                    "endOffset": 260
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 190,
+                        "endColumn": 74,
+                        "endOffset": 260
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 265,
+                    "endColumn": 86,
+                    "endOffset": 347
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 265,
+                        "endColumn": 86,
+                        "endOffset": 347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 352,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 905
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 352,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 905
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 910,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1475
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 910,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1480,
+                    "endColumn": 104,
+                    "endOffset": 1580
+                },
+                "from": {
+                    "file": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\exploded-aar\\kuaidi\\appcompat\\unspecified\\res\\values-v23\\values-v23.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 1480,
+                        "endColumn": 104,
+                        "endOffset": 1580
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,4 @@
+include ':app'
+include ':swipelistview'
+include ':appcompat'
+include ':MagicUHF_tid_U'

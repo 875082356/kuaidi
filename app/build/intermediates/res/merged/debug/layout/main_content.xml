@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1232" >
+
+    <view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1142" />
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center"
+         android:layout_weight="90" 
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_xiadan"
+            style="@style/Bottom_Tab_Style"
+            android:checked="true"
+            android:text="下单" />
+
+        <RadioButton
+            android:id="@+id/rb_huodong"
+            style="@style/Bottom_Tab_Style"
+            android:text="活动" />
+
+        <RadioButton
+            android:id="@+id/rb_dingdan"
+            style="@style/Bottom_Tab_Style"
+            android:text="订单" />
+
+        <RadioButton
+            android:id="@+id/rb_wode"
+            style="@style/Bottom_Tab_Style"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

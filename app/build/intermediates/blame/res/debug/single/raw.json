@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\res\\merged\\debug\\raw\\dudu.ogg",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\app\\res\\raw\\dudu.ogg"
+    },
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\res\\merged\\debug\\raw\\didi.ogg",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\app\\res\\raw\\didi.ogg"
+    },
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beep_ok.wav",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\app\\res\\raw\\beep_ok.wav"
+    },
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\res\\merged\\debug\\raw\\chimes.wav",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\app\\res\\raw\\chimes.wav"
+    },
+    {
+        "merged": "C:\\Users\\a\\Desktop\\kuaidi\\app\\build\\intermediates\\res\\merged\\debug\\raw\\beep_err.wav",
+        "source": "C:\\Users\\a\\Desktop\\kuaidi\\app\\res\\raw\\beep_err.wav"
+    }
+]

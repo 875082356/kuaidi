@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\a\Desktop\kuaidi\MagicUHF_tid_U\libs"><file name="android-support-v4.jar" path="C:\Users\a\Desktop\kuaidi\MagicUHF_tid_U\libs\android-support-v4.jar"/><file name="armeabi/libuhf-tools.so" path="C:\Users\a\Desktop\kuaidi\MagicUHF_tid_U\libs\armeabi\libuhf-tools.so"/></source></dataSet><dataSet config="release"><source path="C:\Users\a\Desktop\kuaidi\MagicUHF_tid_U\build-types\release\jniLibs"/></dataSet></merger>

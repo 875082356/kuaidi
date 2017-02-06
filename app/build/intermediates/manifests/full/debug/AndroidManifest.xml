@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:Android="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hzgzsoft.logisticsmanage" > <!-- <supports-screens -->
+    <!-- android:largeScreens="true" -->
+    <!-- android:normalScreens="true" -->
+    <!-- android:smallScreens="true" -->
+    <!-- android:anyDensity="false"/> -->
+    <!--
+                    使屏幕固定未竖屏
+                    ndroid:screenOrientation="portrait"
+
+                   为了取消掉页面上面的标题栏
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+
+                  为了消除错误：library "libmaliinstr.so" not found
+                  android:hardwareAccelerated="false"
+    -->
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23" />
+
+    <!-- 添加访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- //获取准确GPS坐标的权限 -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- //获取粗略坐标的权限(网络定位时使用) -->
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- android:name="com.hzgzsoft.logisticsmanage.MyApplication" -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!--
+            <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.EmbraceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.AddnewAddressActivty"
+            android:label="增加列表"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.SelectAddressActivity"
+            android:label="地址列表" >
+        </activity>
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.Edit_activity"
+            android:label="编辑地址" >
+        </activity>
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.dingdan_activity"
+            android:label="订单记录" >
+        </activity>
+        <activity
+            android:name="com.hzgzsoft.logisticsmanage.address_activity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity android:name="com.hzgzsoft.logisticsmanage.FirstActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
